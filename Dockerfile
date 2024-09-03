@@ -7,4 +7,5 @@ CMD ["npm", "run", "build"]
 
 
 FROM nginx
+EXPOSE: "80'
 COPY --from=builder /opt/app/build /usr/share/nginx/html
