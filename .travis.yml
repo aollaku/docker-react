@@ -1,4 +1,3 @@
-# This file will connect the GitHub repository with TravisCI.
 services: 
   - docker
 
