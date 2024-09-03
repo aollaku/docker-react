@@ -1,3 +1,4 @@
+# This file will connect the GitHub with TravisCI. 
 sudo: required
 services: 
   - docker
