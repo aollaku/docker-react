@@ -7,5 +7,6 @@ CMD ["npm", "run", "build"]
 
 
 FROM nginx
-EXPOSE 80
+# Expose command followed by nr "80" will be used on Elastic Beanstalk container
+EXPOSE 80 
 COPY --from=builder /opt/app/build /usr/share/nginx/html
