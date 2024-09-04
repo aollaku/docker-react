@@ -11,7 +11,7 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  # edge: true # Enables dpl v.2. If you don`t select this line the deployment on travisci will fail
+  edge: true # Enables dpl v.2. If you don`t select this line the deployment on travisci will fail
   region: "eu-north-1"
   app: "Docker-React"
   env: "Docker-React-env"
