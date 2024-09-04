@@ -1,3 +1,4 @@
+sudo: required # Require sudo
 services: 
   - docker
 
@@ -11,10 +12,10 @@ deploy:
   provider: elasticbeanstalk
   # edge: true # Enables dpl v.2. If you don`t select this line the deployment on travisci will fail
   region: "eu-north-1"
-  app: "frontend"
-  env: "Frontend-env"
+  app: "Docker-React"
+  env: "Docker-React-env"
   bucket_name: "elasticbeanstalk-eu-north-1-715841334298"
-  bucket_path: "frontend"
+  bucket_path: "Docker-React"
   on:
     branch: master
   access_key_id: "$AWS_ACCESS_KEY_ID" # updated
